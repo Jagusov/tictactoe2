@@ -1,0 +1,54 @@
+head {
+  font-family: sans-serif;
+  display: flex;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+}
+
+.board {
+  background: #bd022f;
+  margin: 150px;
+  padding: 50px;
+  border: 1px solid black;
+}
+.gamestatus {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.table {
+  display: grid;
+  background: black;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.box {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bd022f;
+  cursor: pointer;
+}
+
+.x::before {
+  content: "x";
+  font-family: Helvetica, sans-serif;
+  background: rgb(124, 252, 0);
+  font-size: 30px;
+}
+
+.o::before {
+  content: "o";
+  font-family: Helvetica, sans-serif;
+  background: rgb(250, 128, 114);
+  font-size: 30px;
+}
